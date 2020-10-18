@@ -1,0 +1,99 @@
+<!-- <html>
+    <head>
+    </head>
+    <body>
+        
+        <h1>Compose</h1>
+        <h3>From</h3>
+        
+        <input type="email" required>
+        
+        <hr>
+        <h3>To</h3>
+        <input type="email" required>
+        <hr>
+        <h3>Subject</h3>
+        <input type="text" required>
+        <hr>
+        <h3>Compose email</h3>
+        <input type="text" required>
+        <br><br><br>
+        <button type="submit">
+            Sent
+        <a routerLink=""></a></button>
+    
+    </body>
+</html> -->
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <h3>From</h3>
+    <input type="mail" required>
+  </div>
+
+  <div class="textbox">
+    <h3>To</h3>
+    <input type="mail" required>
+  </div>
+
+  <div class="textbox">
+    <h3>Subject</h3>
+    <input type="text" required>
+  </div>
+  <div class="textbox">
+    <h3>Compose email</h3>
+    <input type="text" required>
+  </div>
+  <input type="button" class="btn" value="Sign in">
+</div>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mt-4" id="form">
+        <div class="alert error bg-red-lightest hidden p-4 text-center rounded mb-4"></div>
+        <h1 class="text-center">Compose</h1>
+        <form #simpleForm="ngForm" 
+          (ngSubmit)="getValues(simpleForm.value)">
+          <!--<input type="email"  [(ngModel)]="sendJson.mail"  name="mail" placeholder="To" class="no-outline">-->
+          <input type="email"  [(ngModel)]="sendJson.mail" name="mail" placeholder="To" class="no-outline"><br/><br>
+            <input type="email"  [(ngModel)]="sendJson.email" name=email placeholder="From" class="no-outline"><br/><br>
+            <input type="text" [(ngModel)]="sendJson.subject" id="sub" name="subject" placeholder="Subject" class="no-outline"><br/><br>
+            <textarea name="message"  [(ngModel)]="sendJson.compose" id="txt" type="text" ngModel placeholder="Compose email" id="text" cols="30" rows="10"></textarea><br/>
+            <button class="btn btn-primary float-right">Send</button>
+        </form>
+    </div>
+   <!-- <div style="text-align:center">
+      <h2>
+          Country list from local json file...
+      </h2>
+      <ul *ngFor="let item of countryList">
+         <li>
+            <h3>Country Name :{{item.name}}, Code: {{item.code}}</h3>
+         </li>
+      </ul>
+  </div>-->
+</body>
+
+</html>

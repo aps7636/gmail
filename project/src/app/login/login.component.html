@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="bg-dark text-white text-center">
+        Login Form
+    </h1>
+    
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter Name" required #txt>
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email" required #email>
+        </div>
+       
+        <a type="submit" (click)="getText(txt,email)" class="btn btn-primary">Submit</a>
+      </form>
+</body>
+</html>
+
+
+ --> 
+<!--<html>
+ <head></head>
+ <body>
+<h1>
+  Login Form
+</h1>
+<form #simpleForm="ngForm" 
+ (ngSubmit)="getValues(simpleForm.value)">
+  <input type="text"  ngModel name="user" 
+  placeholder="Enter Name">
+  <br/>
+  <input type="email" ngModel name="email" placeholder="Enter email">
+  <br/>
+  <button>
+    <a routerLink="nav">Submit</a>
+  </button>
+  
+  
+</form>
+</body>
+</html>
+
+
+
+-->
+
+
+
+
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1 class="bg-primary" text-white>Login Form</h1>
+    <form #simpleForm="ngForm" 
+ (ngSubmit)="getValues(simpleForm.value)">
+    
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text"  ngModel name="user" 
+        placeholder="Enter Name">
+        <label for="psw"><b>Email</b></label>
+        <input type="email" id= ngModel name="email"
+         placeholder="Enter email">
+    
+        <button type="submit">
+          Login
+        </button>
+        
+      </div>
+    
+      
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

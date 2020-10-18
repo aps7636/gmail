@@ -1,0 +1,14 @@
+/* a:link {color:#000000;}
+a:visited {color:#000000;}
+a:hover {color:red;}
+a:active {color:#0000FF;} */
+h3{
+    color: black;
+    margin-left: 550px;
+}
+body{
+    background-image:"../../assets/new.jpg";
+}
+table{
+    border: 1 px solid black;
+}

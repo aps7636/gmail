@@ -1,0 +1,67 @@
+ <!--<div style="text-align:center">
+    <h2>
+        Country list from local json file...
+    </h2>
+    <ul *ngFor="let item of countryList">
+       <li>
+          <h3>Country Name :{{item.name}}, Code: {{item.code}}</h3>
+       </li>
+    </ul>
+</div> -->
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+
+  </head>
+  <body>
+
+<!--<div class="container">
+   <h1></h1>
+   <table class="table table-striped">
+     <thead>
+         <tr>
+           <th>ID</th>
+           <th>Name</th>
+           <th>Email</th>
+           <th>Gender</th>
+         </tr>-->
+    <!-- </thead>
+     <tbody>
+       <tr *ngFor="let student of students">
+         <td>{{ student.id }}</td>
+         <td>{{ student.name }}</td>
+         <td>{{ student.email }}</td>
+         <td>{{ student.message }}</td>
+       </tr>
+     </tbody>
+     <div>
+        
+     </div>
+   </table>-->
+
+   <div class="message" *ngFor="let student of students">
+    <i class="fas fa-id-badge"> {{student.name}}<br>to me<i class="fas fa-caret-right icon"></i></i>
+  
+    <!--<p>to me <i class="fas fa-caret-right"></i></p>-->
+<!--</div>
+     
+     
+         <div class="d1">-->
+
+
+   <p>{{student.email}}<br>wrote:<br>
+   <small> <b>{{student.message}}</b></small>
+</p>
+<hr>
+  
+    
+
+    
+ 
+    </div>   
+ 
+
+</body>
+</html>
+

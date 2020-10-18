@@ -1,0 +1,22 @@
+body{
+    border: 5px solid black;
+}
+
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    width: 100%;
+  }
+
+  textarea{
+      border: 0;
+      outline: 0;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  }
